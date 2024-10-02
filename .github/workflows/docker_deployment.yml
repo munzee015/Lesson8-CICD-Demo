@@ -6,7 +6,7 @@ on:
 
 env:
   IMAGE_NAME: munzee/cicd-test-app   # Format: <dockerhub_account>/<repo>
-  IMAGE_TAG: ${{ dffc0a4becbca61f56082962d2fa647305da1d7f }}
+  IMAGE_TAG: ${{ github.sha }}
 
 jobs:
   build-and-publish-docker-image:
